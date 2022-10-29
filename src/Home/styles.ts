@@ -19,17 +19,39 @@ export const styles = StyleSheet.create({
     width: Dimensions.get("screen").width - 58,
     height: 300
   },
+  preview: {
+    width: Dimensions.get('screen').width - 58,
+    height: 300,
+    borderRadius: 10,
+    transform: [
+      { scaleX: -1 }
+    ]
+  },
   player: {
     width: '100%',
     backgroundColor: '#FFF',
     height: 56,
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
   },
   name: {
+    width: '100%',
+
     fontSize: 22,
     fontWeight: '900',
     color: '#000',
-    textTransform: 'uppercase'
+
+    textTransform: 'uppercase',
+    textAlign: 'center'
+  },
+  sticker: {
+    backgroundColor: '#373D98'
+  },
+  retry: {
+    color: '#fff',
+    fontWeight: 'bold',
+    alignSelf: 'center',
+    marginTop: 22,
+    marginBottom: 10,
   }
 });
